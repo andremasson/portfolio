@@ -2,6 +2,8 @@
   <div class="home">
     <img src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <font-awesome-icon icon="cal" />
+    <b-alert show>Default Alert</b-alert>
   </div>
 </template>
 
