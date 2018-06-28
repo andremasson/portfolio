@@ -1,12 +1,27 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="home">
+    <navigation></navigation>
+    <masterhead></masterhead>
+    <services></services>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import navigation from '@/views/Navigation.vue'
+import masterhead from '@/views/Masterhead.vue'
+import services from '@/components/Services.vue'
+
+export default {
+  name: 'home',
+  components: {
+    navigation,
+    masterhead,
+    services
+  }
+}
+</script>
+
 
 <style lang="scss">
 #app {
