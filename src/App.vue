@@ -3,6 +3,10 @@
     <navigation></navigation>
     <masterhead></masterhead>
     <services></services>
+    <projects></projects>
+    <team></team>
+    <calltoaction></calltoaction>
+    <pagefooter></pagefooter>
   </div>
 </template>
 
@@ -11,13 +15,21 @@
 import navigation from '@/views/Navigation.vue'
 import masterhead from '@/views/Masterhead.vue'
 import services from '@/components/Services.vue'
+import projects from '@/components/Projects.vue'
+import team from '@/components/Team.vue'
+import calltoaction from '@/components/CallToAction.vue'
+import pagefooter from '@/views/Footer.vue'
 
 export default {
   name: 'home',
   components: {
     navigation,
     masterhead,
-    services
+    services,
+    projects,
+    team,
+    calltoaction,
+    pagefooter
   }
 }
 </script>
